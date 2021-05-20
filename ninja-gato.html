@@ -35,7 +35,9 @@
         //     console.log('data-alt-src value is', $(this).attr('data-alt-src'));
         // });
         $(".img-thumbnail").click(function() {
-            $(this).attr("src", $(this).attr('data-alt-src'));
+            let imagen1 = $(this).attr("src");
+            $(this).attr("src", $(this).attr("data-alt-src"));
+            $(this).attr("data-alt-src", imagen1);
         });
         // $("#img0").click(function() {
         //     $(this).attr("src", "img/cat0.png");
