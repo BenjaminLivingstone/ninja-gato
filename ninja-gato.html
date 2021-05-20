@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="contaier text-center">
+        <div class="col">
+            <img id="img0" src="img/ninja0.png" data-alt-src="img/cat0.png" alt="" class="img-thumbnail">
+        </div>
+        <div class="col">
+            <img id="img1" src="img/ninja1.png" data-alt-src="img/cat1.png" alt="" class="img-thumbnail">
+        </div>
+        <div class="col">
+            <img id="img2" src="img/ninja2.png" data-alt-src="img/cat2.png" alt="" class="img-thumbnail">
+        </div>
+        <div class="col">
+            <img id="img3" src="img/ninja3.png" data-alt-src="img/cat3.png" alt="" class="img-thumbnail">
+        </div>
+        <div class="col">
+            <img id="img4" src="img/ninja4.png" data-alt-src="img/cat4.png" alt="" class="img-thumbnail">
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        // $("img").click(function() {
+        //     console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+        // });
+        $(".img-thumbnail").click(function() {
+            $(this).attr("src", $(this).attr('data-alt-src'));
+        });
+        // $("#img0").click(function() {
+        //     $(this).attr("src", "img/cat0.png");
+        // });
+        // $("#img1").click(function() {
+        //     $(this).attr("src", "img/cat1.png");
+        // });
+        // $("#img2").click(function() {
+        //     $(this).attr("src", "img/cat2.png");
+        // });
+        // $("#img3").click(function() {
+        //     $(this).attr("src", "img/cat3.png");
+        // });
+        // $("#img4").click(function() {
+        //     $(this).attr("src", "img/cat4.png");
+        // });
+    </script>
+</body>
+
+</html>
