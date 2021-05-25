@@ -34,7 +34,7 @@
         // $("img").click(function() {
         //     console.log('data-alt-src value is', $(this).attr('data-alt-src'));
         // });
-        $(".img-thumbnail").click(function() {
+        $("img").click(function() {
             let imagen1 = $(this).attr("src");
             $(this).attr("src", $(this).attr("data-alt-src"));
             $(this).attr("data-alt-src", imagen1);
